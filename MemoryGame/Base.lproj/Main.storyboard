@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Memory Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq0-hn-MaK">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="2m2-lV-3Jf">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zK9-ly-AaJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="150.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-eG-xyy">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CpT-DM-UuS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBP-sQ-VdY">
+                                                <rect key="frame" x="84" y="0.0" width="83.5" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0D-oY-rUJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ot-sm-sb8">
+                                                <rect key="frame" x="167.5" y="0.0" width="84" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c5R-YC-Bd9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-TD-fbc">
+                                                <rect key="frame" x="251.5" y="0.0" width="83.5" height="150.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hW-wD-1Bz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C1l-hE-SFR">
+                                        <rect key="frame" x="0.0" y="152.5" width="335" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f4-g8-brV">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJf-WV-MLh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfP-6O-Mli">
+                                                <rect key="frame" x="84" y="0.0" width="83.5" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3J-cC-3EV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa6-J3-RAw">
+                                                <rect key="frame" x="167.5" y="0.0" width="84" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZlP-i2-Rcg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHH-Zk-FId">
+                                                <rect key="frame" x="251.5" y="0.0" width="83.5" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahJ-NC-uQ7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bhv-3r-l6r">
+                                        <rect key="frame" x="0.0" y="304.5" width="335" height="150.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJg-rH-J1q">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cz-uO-CdC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJ6-de-7jl">
+                                                <rect key="frame" x="84" y="0.0" width="83.5" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AZv-pb-hgy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liT-gM-x2m">
+                                                <rect key="frame" x="167.5" y="0.0" width="84" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8G7-Ee-Lv7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw1-8f-1t7">
+                                                <rect key="frame" x="251.5" y="0.0" width="83.5" height="150.5"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebv-g7-Pbc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I94-Dq-SJ9">
+                                        <rect key="frame" x="0.0" y="457" width="335" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvR-hK-QZx">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGv-cB-LHb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgN-s1-E2v">
+                                                <rect key="frame" x="84" y="0.0" width="83.5" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKv-25-Hff"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klv-0E-CnT">
+                                                <rect key="frame" x="167.5" y="0.0" width="84" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNb-py-mW3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVu-3d-W5I">
+                                                <rect key="frame" x="251.5" y="0.0" width="83.5" height="150"/>
+                                                <state key="normal" image="card"/>
+                                                <connections>
+                                                    <action selector="onClickFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FfE-vZ-THF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Bhv-3r-l6r" firstAttribute="height" secondItem="zK9-ly-AaJ" secondAttribute="height" id="2Tb-g8-9Xm"/>
+                                    <constraint firstItem="C1l-hE-SFR" firstAttribute="height" secondItem="zK9-ly-AaJ" secondAttribute="height" id="OCP-b8-AtZ"/>
+                                    <constraint firstItem="I94-Dq-SJ9" firstAttribute="top" secondItem="Bhv-3r-l6r" secondAttribute="bottom" constant="2" id="Qqw-4z-ILb"/>
+                                    <constraint firstItem="C1l-hE-SFR" firstAttribute="top" secondItem="zK9-ly-AaJ" secondAttribute="bottom" constant="2" id="Rc4-jS-aKV"/>
+                                    <constraint firstItem="I94-Dq-SJ9" firstAttribute="height" secondItem="zK9-ly-AaJ" secondAttribute="height" id="dyX-fn-aVs"/>
+                                    <constraint firstItem="Bhv-3r-l6r" firstAttribute="top" secondItem="C1l-hE-SFR" secondAttribute="bottom" constant="2" id="h59-JI-YkH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2m2-lV-3Jf" secondAttribute="bottom" constant="20" id="1uo-QU-caa"/>
+                            <constraint firstItem="2m2-lV-3Jf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="FGh-JD-Y99"/>
+                            <constraint firstItem="2m2-lV-3Jf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="gIT-hK-Oas"/>
+                            <constraint firstAttribute="trailing" secondItem="2m2-lV-3Jf" secondAttribute="trailing" constant="20" id="lYS-wf-58x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="cards" destination="1t8-eG-xyy" collectionClass="NSMutableArray" id="Bca-Ln-xVM"/>
+                        <outletCollection property="cards" destination="fBP-sQ-VdY" collectionClass="NSMutableArray" id="cnC-9C-Te4"/>
+                        <outletCollection property="cards" destination="1Ot-sm-sb8" collectionClass="NSMutableArray" id="GLL-8H-s4p"/>
+                        <outletCollection property="cards" destination="Sqz-TD-fbc" collectionClass="NSMutableArray" id="eCm-kw-M9u"/>
+                        <outletCollection property="cards" destination="5f4-g8-brV" collectionClass="NSMutableArray" id="Pbp-Y9-4R4"/>
+                        <outletCollection property="cards" destination="yfP-6O-Mli" collectionClass="NSMutableArray" id="etV-dr-ENh"/>
+                        <outletCollection property="cards" destination="Qa6-J3-RAw" collectionClass="NSMutableArray" id="k0W-55-g5y"/>
+                        <outletCollection property="cards" destination="MHH-Zk-FId" collectionClass="NSMutableArray" id="H3k-HD-7bi"/>
+                        <outletCollection property="cards" destination="eJg-rH-J1q" collectionClass="NSMutableArray" id="ulF-KV-xdg"/>
+                        <outletCollection property="cards" destination="oJ6-de-7jl" collectionClass="NSMutableArray" id="ldG-45-4bR"/>
+                        <outletCollection property="cards" destination="liT-gM-x2m" collectionClass="NSMutableArray" id="VRa-nS-1qw"/>
+                        <outletCollection property="cards" destination="Kw1-8f-1t7" collectionClass="NSMutableArray" id="iQ8-0f-3Gg"/>
+                        <outletCollection property="cards" destination="DvR-hK-QZx" collectionClass="NSMutableArray" id="MWX-PR-Ovc"/>
+                        <outletCollection property="cards" destination="XgN-s1-E2v" collectionClass="NSMutableArray" id="I6i-hY-Xh6"/>
+                        <outletCollection property="cards" destination="klv-0E-CnT" collectionClass="NSMutableArray" id="g5x-cT-XdA"/>
+                        <outletCollection property="cards" destination="GVu-3d-W5I" collectionClass="NSMutableArray" id="dYO-pQ-8bq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="180" height="180"/>
+    </resources>
+</document>
